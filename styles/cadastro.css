@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialised;
+}
+
+:root{
+    --white: #fff;
+    --black: #000;
+
+    --blue-600: #1b2441;
+    --blue-500: rgb(19, 18, 101);
+    --blue-400: rgb(3, 0, 155);
+    --blue-300: rgb(52, 123, 255);
+    --blue-200: rgb(90, 148, 255);
+
+    --yellow-400: #ffea00;
+}
+
+body{
+    background-color: #2e5fff;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.wrapper img{
+    width: 12rem;
+}
+.wrapper h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+}
+.wrapper span{
+    color: var(--yellow-400);
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 5rem;
+}
+
+.wrapper h1::before{
+    content: "📧";
+    display: block;
+}
+
+.wrapper form{
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+    display: block;
+    width: 100%;
+}
+
+.form label{
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea{
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color,
+    box-shadow 0.2s;
+}
+
+.form textarea{
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+    outline: none;
+    border-color: var(--yellow-400);
+    box-shadow: 0 0 0 3px var(--yellow-400);
+}
+
+.form button{
+    display: block;
+    padding: 1rem;
+    background-color: var(--blue-300);
+    color: var(--black);
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus{
+    outline: none;
+    background-color: var(--blue-200);
+}

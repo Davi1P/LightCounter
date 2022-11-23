@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: 0;
+    padding: 0;
+
+    -webkit-font-smoothing: antialised;
+}
+
+:root{
+    --white: #fff;
+    --black: #000;
+
+    --blue-600: #1b2441;
+    --blue-500: rgb(19, 18, 101);
+    --blue-400: rgb(3, 0, 155);
+    --blue-300: rgb(52, 123, 255);
+    --blue-200: rgb(90, 148, 255);
+
+    --yellow-400: #ffea00;
+}
+
+img{
+    width: 32rem;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    color: var(--blue-300);
+}
+
+h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 500;
+}
+
+a{
+    font-family: cursive;
+    text-decoration: none;
+    max-width: 32rem;
+    width: 100%;
+    background-color: var(--blue-300);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 0.6rem;
+    margin-top: 0.6rem;
+}
+
+.wrapper{
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
